@@ -1,0 +1,11 @@
+#root { min-height: 100vh; }
+
+@keyframes pulse-line { 0%, 100% { opacity: .35; } 50% { opacity: 1; } }
+
+.control-grid {
+  background-image: linear-gradient(hsl(var(--border) / .18) 1px, transparent 1px), linear-gradient(90deg, hsl(var(--border) / .18) 1px, transparent 1px);
+  background-size: 32px 32px;
+  mask-image: linear-gradient(to bottom, black, transparent 72%);
+}
+
+.panel-shadow { box-shadow: var(--shadow-panel); }

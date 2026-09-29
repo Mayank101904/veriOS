@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 220 22% 7%;
+    --foreground: 210 20% 94%;
+    --card: 220 20% 10%;
+    --card-foreground: 210 20% 94%;
+    --popover: 220 20% 11%;
+    --popover-foreground: 210 20% 94%;
+    --primary: 191 84% 56%;
+    --primary-foreground: 220 28% 8%;
+    --secondary: 220 17% 15%;
+    --secondary-foreground: 210 18% 82%;
+    --muted: 220 16% 13%;
+    --muted-foreground: 216 12% 58%;
+    --accent: 220 16% 18%;
+    --accent-foreground: 210 20% 94%;
+    --destructive: 2 78% 61%;
+    --destructive-foreground: 210 20% 96%;
+    --border: 220 15% 20%;
+    --input: 220 15% 20%;
+    --ring: 191 84% 56%;
+    --radius: 0.7rem;
+    --success: 152 62% 47%;
+    --warning: 37 92% 61%;
+    --info: 202 88% 62%;
+    --shadow-panel: 0 18px 60px hsl(220 35% 3% / 0.28);
+    --sidebar-background: 220 23% 8%;
+    --sidebar-foreground: 214 16% 77%;
+    --sidebar-primary: 191 84% 56%;
+    --sidebar-primary-foreground: 220 28% 8%;
+    --sidebar-accent: 220 17% 14%;
+    --sidebar-accent-foreground: 210 20% 94%;
+    --sidebar-border: 220 15% 17%;
+    --sidebar-ring: 191 84% 56%;
+  }
+
+  * { @apply border-border; }
+  body { @apply bg-background text-foreground antialiased; font-family: "IBM Plex Sans", ui-sans-serif, system-ui, sans-serif; }
+  button, input { font: inherit; }
+}
+
+html, body, #root { width: 100%; min-height: 100%; }
